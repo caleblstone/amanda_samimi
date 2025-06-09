@@ -1,0 +1,41 @@
+<!-- <div id="filmBox" class="closed workBox">
+    <h1>film</h1>
+</div> -->
+
+<div id="filmBox" class="closed workBox">
+    <div class="categoryHeader">
+        <div class="pill"><h1>Film</h1></div>
+    </div>
+    <div class="categoryContent">
+        
+        {% for post in site.categories.film %}
+          
+        <div class="work">
+            
+            <a href="{{ post.filmLink }}" target="_blank">
+            <div class="workImage">
+                <img src="{{post.images}}" alt="">
+            </div>
+            </a>
+
+            <div class="workText">
+        
+                <div>
+                    <div class="work_title"><p>{{ post.title}}, {{ post.year }}</p></div>
+                    <div class="work_materials"><p>{{ post.materials }}</p></div>
+                </div>
+                <div>
+                   
+                </div>
+
+            </div>
+        
+            
+                
+        </div>
+         
+        {% endfor %}
+
+
+    </div>
+</div>

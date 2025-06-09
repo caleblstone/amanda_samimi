@@ -1,0 +1,45 @@
+
+
+<div id="aboutBox" class="closed workBox">
+    <div class="categoryHeader">
+        <div class="pill"><h1>About</h1></div>
+    </div>
+    <div class="categoryContent">
+        
+        {% for post in site.categories.about %}
+            
+            <div id="aboutText">
+                <div><p>{{ post.content }}</p></div>
+                <div></div>
+            </div>
+        
+        
+        
+            <!-- <div class="work">
+            
+
+            <div class="workImage">
+                <img src="{{post.images}}" alt="">
+            </div>
+
+            <div class="workText">
+        
+                <div>
+                    <div class="work_title"><p>{{ post.title}}, {{ post.year }}</p></div>
+                    <div class="work_materials"><p>{{ post.materials }}</p></div>
+                    <div class="work_dimensions"><p>{{ post.dimensions }}</p></div>
+                </div>
+                <div>
+                   
+                </div>
+
+            </div> -->
+        
+            
+                
+        </div>
+        {% endfor %}
+
+
+    </div>
+</div>
