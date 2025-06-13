@@ -60,6 +60,7 @@ body{
             display: flex;
             font-family: "monoy";
             font-style: italic;
+            font-weight: 100;
             font-size: 3vh;
             justify-content: center;
             align-items: center;
@@ -268,62 +269,66 @@ body{
         }
         
     }
-}
-
-// Dark mode styles
-body.dark-mode {
-    background-color: #181818;
-    color: #F2F1F0;
-
-    #mainContent {
-        #mainName {
-            color: #F2F1F0;
-        }
-        #contentBox {
-            .workBox {
-                border: 1px solid #444;
-                background: #232323;
-
-                .categoryHeader {
-                    border-bottom: 1px solid #444;
-                    .pill {
-                        background-color: #181818;
-                        border: 1px solid #444;
-                        box-shadow: 1px 4px 8px rgba(0,0,0,0.5);
-                        h1 {
-                            color: #F2F1F0;
-                        }
-                    }
-                }
-                .categoryContent {
-                    .work {
-                        .workImage {
-                        }
-                        .workText {
-                            color: #F2F1F0;
-                        }
-                    }
-                }
-            }
-            .closed {
-                .categoryHeader {
-                    border-bottom: none;
-                    .pill {
-                        background-color: rgba(0,0,0,0);
-                        border: none;
-                        box-shadow: none;
-                        h1 {
-                            color: #F2F1F0;
-                        }
-                    }
-                }
-            }
-            .open {
-                background-color: #232323;
-            }
-        }
+    #carouselModal {
+        position: fixed;
+        z-index: 9999;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    .carousel-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.7);
     }
+    .carousel-content {
+        position: relative;
+        background: #fff;
+        border-radius: 40px;
+        border: 1px solid black;
+        width: 90vw;
+        height: 90vh;
+        padding: 24px 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+  }
+    .carousel-image img {
+        max-width: 70vw;
+        max-height: 80vh;
+        display: block;
+        margin: 0 auto;
+    }
+    .carousel-text {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        font-family: "serify";
+        // margin-top: 16px;
+        text-align: left;
+        p{
+            margin: 0px;
+            margin-top: 8px;
+        }
+     }
+  .carousel-close, .carousel-prev, .carousel-next {
+    position: absolute;
+    top: 16px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .carousel-close { right: 16px; }
+  .carousel-prev { left: 16px; top: 50%; transform: translateY(-50%); }
+  .carousel-next { right: 16px; top: 50%; transform: translateY(-50%); }
 }
+}
+
 
 @media (max-width: 600px) {
   #mainContent {
