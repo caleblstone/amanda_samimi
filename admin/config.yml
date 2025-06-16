@@ -10,6 +10,7 @@ media_library:
     publicKey: 54eb8b86817807683424
     multiple: true
   settings:
+    defaultOperations: 
 
 collections:
   - name: "visualArt"
