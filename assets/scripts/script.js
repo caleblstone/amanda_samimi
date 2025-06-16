@@ -108,16 +108,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.style.overflow = 'hidden';
   }
 
-  // Update modal content
-  function updateModal() {
-    const work = currentWorks[currentIndex];
-    const data = getWorkData(work);
-    imageDiv.innerHTML = `<img src="${data.imgSrc}" alt="${data.imgAlt}">`;
-    textDiv.innerHTML = data.textHtml;
-    prevBtn.style.display = currentIndex > 0 ? 'block' : 'none';
-    nextBtn.style.display = currentIndex < currentWorks.length - 1 ? 'block' : 'none';
-  }
-
   // Hide modal
   function hideModal() {
     modal.style.display = 'none';
@@ -190,8 +180,9 @@ function updateModal() {
   textDiv.innerHTML = data.textHtml;
   prevBtn.style.display = currentIndex > 0 ? 'block' : 'none';
   nextBtn.style.display = currentIndex < currentWorks.length - 1 ? 'block' : 'none';
-
-  // Wait for the DOM to update before syncing width
-  setTimeout(syncTextWidthToImage, 0);
 }
+
+
+
 })();
+

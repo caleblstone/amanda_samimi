@@ -284,10 +284,10 @@ body{
     .carousel-content {
         position: relative;
         background: #fff;
-        border-radius: 40px;
+        // border-radius: 40px;
         border: 1px solid black;
-        width: 90vw;
-        height: 90vh;
+        width: 100vw;
+        height: 100vh;
         padding: 24px 48px;
         display: flex;
         flex-direction: column;
@@ -295,14 +295,20 @@ body{
         align-items: center;
         z-index: 1;
   }
+    .carousel-image-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .carousel-image img {
         max-width: 70vw;
-        max-height: 80vh;
+        max-height: 85vh;
         display: block;
         margin: 0 auto;
     }
     .carousel-text {
-  
+        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -323,7 +329,7 @@ body{
     cursor: pointer;
     z-index: 2;
   }
-  .carousel-close { right: 16px; }
+  .carousel-close { right: 16px; top: 32px;}
   .carousel-prev { left: 16px; top: 50%; transform: translateY(-50%); }
   .carousel-next { right: 16px; top: 50%; transform: translateY(-50%); }
 }

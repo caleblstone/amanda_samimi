@@ -7,7 +7,7 @@ media_folder: "images"
 media_library:
   name: uploadcare
   config:
-    publicKey: fbb66349001efbc7e5ce
+    publicKey: 54eb8b86817807683424
     multiple: true
   settings:
 
