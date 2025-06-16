@@ -19,8 +19,6 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Layout", name: "layout", widget: "string", default: "default" }
-      - { label: "Categories", name: "categories", widget: "string", default: "visualArt" }
       - { label: "Order", name: "order", widget: "number", required: true }
       - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Year", name: "year", widget: "string", required: false }
@@ -33,8 +31,6 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Layout", name: "layout", widget: "string", default: "default" }
-      - { label: "Categories", name: "categories", widget: "string", default: "film" }
       - { label: "Order", name: "order", widget: "number", required: true }
       - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Year", name: "year", widget: "string", required: false }
@@ -47,8 +43,6 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Layout", name: "layout", widget: "string", default: "default" }
-      - { label: "Categories", name: "categories", widget: "string", default: "about" }
       - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Images", name: "images", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
