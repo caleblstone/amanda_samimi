@@ -37,6 +37,14 @@ theme: minima
 plugins:
   - jekyll-feed
 
+collections:
+  visualArt:
+    sort_by: order
+  film:
+    sort_by: order
+  about:
+    sort_by: order
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

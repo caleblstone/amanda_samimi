@@ -15,7 +15,7 @@ media_library:
 collections:
   - name: "visualArt"
     label: "Visual Art" 
-    folder: "_posts/visualArt"
+    folder: "src/_visualArt"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -29,7 +29,7 @@ collections:
       - { label: "Images", name: "images", widget: "image" }
   - name: "film"
     label: "Film" 
-    folder: "_posts/film"
+    folder: "src/_film"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -43,7 +43,7 @@ collections:
       - { label: "Images", name: "images", widget: "image" }
   - name: "about"
     label: "About" 
-    folder: "_posts/about"
+    folder: "src/_about"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:

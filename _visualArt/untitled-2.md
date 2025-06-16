@@ -1,7 +1,7 @@
 ---
-layout: default
-categories: visualArt
-order: 1
+# layout: default
+# categories: visualArt
+order: 2
 title: Untitled 2
 year: "2025"
 materials: Colored pencil on Board
