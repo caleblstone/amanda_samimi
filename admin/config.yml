@@ -20,6 +20,7 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "string", default: "default" }
       - { label: "Categories", name: "categories", widget: "string", default: "visualArt" }
+      - { label: "Order", name: "order", widget: "number", required: true }
       - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Year", name: "year", widget: "string", required: false }
       - { label: "Materials", name: "materials", widget: "string", required: false}
@@ -33,6 +34,7 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "string", default: "default" }
       - { label: "Categories", name: "categories", widget: "string", default: "film" }
+      - { label: "Order", name: "order", widget: "number", required: true }
       - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Year", name: "year", widget: "string", required: false }
       - { label: "Materials", name: "materials", widget: "string", required: false}

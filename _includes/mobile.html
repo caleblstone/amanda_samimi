@@ -6,7 +6,7 @@
     </div>
     <div class="categoryContent">
         <div class="scrollFixBox">
-        {% for post in site.categories.visualArt %}
+        {% for post in site.categories.visualArt | sort: "order" %}
             <div class="work mobileVisualArt">
         
                 <div class="workImage">
@@ -33,7 +33,7 @@
         </div>
 
         <div class="scrollFixBox closed">
-        {% for post in site.categories.film %}
+        {% for post in site.categories.film | sort: "order" %}
           
         <div class="work mobileFilm">
             

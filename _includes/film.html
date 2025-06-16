@@ -8,7 +8,7 @@
     </div>
     <div class="categoryContent">
         
-        {% for post in site.categories.film %}
+        {% for post in site.categories.film | sort: "order" %}
           
         <div class="work">
             
